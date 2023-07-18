@@ -1,0 +1,16 @@
+h3 {
+    font-family: sans-serif;
+    font-size: large;
+}
+
+p {
+    font-family:sans-sarif;
+    font-size: medium;
+}
+
+.input {
+    width: 25%;
+    margin: 10%;
+    border: none;
+    border-radius: 7px;
+}
