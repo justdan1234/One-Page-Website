@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>The Donut Shop</title>
 		<link rel="stylesheet" href="C:\Users\justi\Documents\GitHub\One-Page Website\CSS\one_page_website.css">
+		<script src="C:\Users\justi\Documents\GitHub\One-Page Website\JS\one_page_website.js"></script>
 	</head>
 	<body>
 		
@@ -83,10 +84,75 @@
 		<!--End RSVP-->
 		<!--Video-->
 		<section>
-			<div id="video"
-				<div>
-					<iframe src="https://www.youtube.com/watch?v=SngP9GvWp54" height="200" width="300" title="How donuts are made!"</iframe>
-				</div>
+		<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant1.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant2.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant3.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant4.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant1-small.png" onclick="currentSlide(1)" alt="Plant 1">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant2-small.png" onclick="currentSlide(2)" alt="Plant 2">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant3-small.png" onclick="currentSlide(3)" alt="Plant 3">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="C:\Users\justi\Documents\GitHub\One-Page Website\Images\plant4-small.png" onclick="currentSlide(4)" alt="Plant 4">
+	  </div>
+	</div>
+  </div>
+  
 		</section>
 		<!--End Video-->
 		<!--footer-->
